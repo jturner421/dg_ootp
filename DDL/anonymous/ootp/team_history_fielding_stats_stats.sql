@@ -1,0 +1,31 @@
+create table if not exists team_history_fielding_stats_stats
+(
+    team_id       int      not null,
+    year          smallint not null,
+    league_id     int      null,
+    sub_league_id smallint null,
+    division_id   smallint null,
+    level_id      smallint null,
+    split_id      smallint null,
+    position      smallint null,
+    g             int      null,
+    gs            int      null,
+    tc            int      null,
+    a             int      null,
+    po            int      null,
+    e             int      null,
+    dp            int      null,
+    tp            int      null,
+    pb            int      null,
+    sba           int      null,
+    rto           int      null,
+    er            int      null,
+    ip            int      null,
+    ipf           int      null,
+    pct           double   null,
+    `range`       double   null,
+    rtop          double   null,
+    cera          double   null,
+    primary key (team_id, year)
+);
+
